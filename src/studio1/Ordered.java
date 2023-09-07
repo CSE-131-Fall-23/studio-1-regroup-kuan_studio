@@ -8,14 +8,28 @@ public class Ordered {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		System.out.println("Value for x?");
-		int x = in.nextInt();
-		System.out.println("Value for y?");
-		int y = in.nextInt();
-		System.out.println("Value for z?");
-		int z = in.nextInt();
-
+		
+//		Scanner in = new Scanner(System.in);
+//		System.out.println("Value for x?");
+//		int x = in.nextInt();
+//		System.out.println("Value for y?");
+//		int y = in.nextInt();
+//		System.out.println("Value for z?");
+//		int z = in.nextInt();
+//		boolean isOrdered = (x < y && y < z) || (x > y && y > z);
+//		
+//		System.out.println(isOrdered);
+		
+		Scanner reader = new Scanner(System.in);
+		System.out.println("test");
+		int x = reader.nextInt();
+		int y = reader.nextInt();
+		int z = reader.nextInt();
+		String name = reader.nextLine();
+		boolean isOdered = (x < y && y < z) || (x > y && y > z);
+		System.out.print(isOdered);
+		System.out.print(x);
+		
 	}
 
 }
